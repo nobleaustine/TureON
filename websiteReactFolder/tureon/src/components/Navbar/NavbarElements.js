@@ -82,7 +82,7 @@ export const MobileIcon = styled.div`
     cursor: pointer;
 
     &.active { 
-      border-bottom: 5px solid #01bf71;
+      border-bottom: 5px solid #7F00FF;
     }
   `;
 

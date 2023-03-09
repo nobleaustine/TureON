@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router ,Routes as Switch, Route} from 'react-router-dom'
+import { BrowserRouter as Router ,Routes as Switch, Route} from 'react-router-dom';
+import SigninPage from './pages/signin';
+import SignUpPage from './pages/signup';
 
 import Home from './pages';
 
@@ -11,6 +13,8 @@ function App() {
     <Router>
       <Switch>
         <Route path='/' element={<Home/>} />
+        <Route path='/signin' element={<SigninPage/>} />
+        <Route path='/signup' element={<SignUpPage/>} />
       </Switch>
     </Router>
   );
@@ -18,6 +22,6 @@ function App() {
 
 export default App;
 
-//      import SigninPage from './pages/signin';
-//  <Route path='/signin' element={<SigninPage/>} />
+//      
+//  
 
