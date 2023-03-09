@@ -23,7 +23,7 @@ const HeroSection = () => {
               Design the Turing Machine based on the problem and test it with the required Strings
             </HeroP>
             <HeroBtnWrapper>
-              <Button to='introduction' 
+              <Button  
               onMouseEnter={onHover}
               onMouseLeave={onHover}
               primary = 'true'
