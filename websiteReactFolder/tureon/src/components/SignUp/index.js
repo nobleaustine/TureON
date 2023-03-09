@@ -9,7 +9,7 @@ const SignIn = () => {
          <Icon to="/"> TureON</Icon>
          <FormContent>
           <Form action = "#">
-            <FormH1>Create new Account</FormH1>
+            <FormH1>Create New Account</FormH1>
             <FormLabel htmlFor='for'>Username</FormLabel>
             <FormInput type='name' required />
             <FormLabel htmlFor='for'>Email</FormLabel>
