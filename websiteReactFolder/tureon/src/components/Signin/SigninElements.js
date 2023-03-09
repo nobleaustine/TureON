@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
+import { Link as LinkR } from 'react-router-dom';
 
 
 export const Container = styled.div`
@@ -111,5 +112,22 @@ export const Text = styled.span`
   font-size: 14px;
 `;
 
-
+export const SigninLink = styled(LinkR)`
+    border-radius: 50px;
+    //background: #7F00FF;
+    //white-space: nowrap;
+    padding: 10px 22px;
+    color: #fff;
+    fnt-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    text-align: center;
+    // &:hover{
+    //   transition: all 0,2s ease-in-out;
+    //   background: #fff;
+    //   color: #7F00FF;
+    // }
+   `
  
