@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Video from '../../videos/Turing_machines_02-1.gif';
 import {Button} from '../ButtonElement';
-import { HeroContainer, HeroBg, VideoBg, HeroContent,HeroH1,HeroP,HeroBtnWrapper,ArrowForward,ArrowRight} from './HeroElements';
+import { HeroContainer, HeroBg, VideoBg, HeroContent,HeroH1,HeroP,HeroBtnWrapper,ArrowForward,ArrowRight, HeroBtnLink} from './HeroElements';
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
@@ -23,7 +23,7 @@ const HeroSection = () => {
               Design the Turing Machine based on the problem and test it with the required Strings
             </HeroP>
             <HeroBtnWrapper>
-              <Button to='introduction' 
+              <Button  
               onMouseEnter={onHover}
               onMouseLeave={onHover}
               primary = 'true'
@@ -33,8 +33,8 @@ const HeroSection = () => {
               spy={true}
               exact='true'  
               offset={-80}
-              >
-                Get Started{hover ? <ArrowForward />: <ArrowRight/>}
+              > <HeroBtnLink to='/signup'>
+                Sign Up{hover ? <ArrowForward />: <ArrowRight/>}</HeroBtnLink>
               </Button>
             </HeroBtnWrapper>
            </HeroContent>
